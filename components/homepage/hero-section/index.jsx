@@ -21,9 +21,9 @@ const Hero_section = () => {
                             <div className='all-type-gst-data'>
                                 
                                 {
-                                    gst_array.map((ele)=>{
+                                    gst_array.map((ele , index)=>{
                                         return(
-                                            <div className="services-box">
+                                            <div className="services-box" key={index}>
                                                <p>{ele}</p>
                                              </div>
                                         )
