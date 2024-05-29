@@ -41,8 +41,8 @@ const HeaderFile = () => {
                     <li class="nav-item">
                       <a class="nav-link ">Others</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link ">Login</a>
+                    <li class="nav-item login-btn pl-2 pr-2">
+                      <a class="nav-link text-white ">Login</a>
                     </li>
                   </ul>
                 </div>

@@ -12,8 +12,8 @@ const PricingTable = () => {
   };
 
   return (
-    <div>
-      <div className="tabs">
+    <div className='row'>
+      <div className="tabs col-lg-4 col-12">
         {pricingData.tabs.map((tab, index) => (
           <button
             key={index}
