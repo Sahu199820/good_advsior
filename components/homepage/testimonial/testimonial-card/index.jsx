@@ -1,44 +1,124 @@
-"use client";
+"use client"
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Navigation } from 'swiper';
+
+// Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-SwiperCore.use([Pagination, Navigation]);
-
-const testimonials = [
-  { id: 1, text: 'Testimonial 1', author: 'Author 1' },
-  { id: 2, text: 'Testimonial 2', author: 'Author 2' },
-  { id: 3, text: 'Testimonial 3', author: 'Author 3' },
-  { id: 4, text: 'Testimonial 4', author: 'Author 4' },
-];
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
 
 const TestimonialCards = () => {
   return (
-    <div className="testimonial-slider-container">
+    <>
       <Swiper
         slidesPerView={2}
         spaceBetween={30}
-        pagination={{ clickable: true }}
-        navigation
-        breakpoints={{
-          640: { slidesPerView: 1, spaceBetween: 20 },
-          768: { slidesPerView: 2, spaceBetween: 30 },
-          1024: { slidesPerView: 2, spaceBetween: 40 },
+        loop={true}
+        pagination={{
+          clickable: true,
         }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
       >
-        {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
-            <div className="testimonial">
-              <p>{testimonial.text}</p>
-              <h4>{testimonial.author}</h4>
+        <SwiperSlide>
+          <div className="testimonial-box">
+            <div className="star">
+              <img src="../../images/icon/rating.png" />
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
-    </div>
-  );
-};
+            <p>“Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”</p>
+            <div className="reverw-name">
+              <div className="row">
+                <div className="col-lg-6">
+                  <img src='../../images/reviewer-name.png' />
+                  <div>
+                    <h3>Robert Fox</h3>
+                    <h5>UI/UX Designer</h5>
+                  </div>
+                </div>
+                <div className="col-lg-6 d-flex align-items-end">
+                  <img src='../../images/Quote.png' />
+                </div>
+              </div>
 
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="testimonial-box">
+            <div className="star">
+              <img src="../../images/icon/rating.png" />
+            </div>
+            <p>“Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”</p>
+            <div className="reverw-name">
+              <div className="row">
+                <div className="col-lg-6">
+                  <img src='../../images/reviewer-name.png' />
+                  <div>
+                    <h3>Robert Fox</h3>
+                    <h5>UI/UX Designer</h5>
+                  </div>
+                </div>
+                <div className="col-lg-6 d-flex align-items-end">
+                  <img src='../../images/Quote.png' />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="testimonial-box">
+            <div className="star">
+              <img src="../../images/icon/rating.png" />
+            </div>
+            <p>“Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”</p>
+            <div className="reverw-name">
+              <div className="row">
+                <div className="col-lg-6">
+                  <img src='../../images/reviewer-name.png' />
+                  <div>
+                    <h3>Robert Fox</h3>
+                    <h5>UI/UX Designer</h5>
+                  </div>
+                </div>
+                <div className="col-lg-6 d-flex align-items-end">
+                  <img src='../../images/Quote.png' />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="testimonial-box">
+            <div className="star">
+              <img src="../../images/icon/rating.png" />
+            </div>
+            <p>“Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”</p>
+            <div className="reverw-name">
+              <div className="row">
+                <div className="col-lg-6">
+                  <img src='../../images/reviewer-name.png' />
+                  <div>
+                    <h3>Robert Fox</h3>
+                    <h5>UI/UX Designer</h5>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-12 d-flex align-items-end">
+                  <img src='../../images/Quote.png' />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+}
 export default TestimonialCards;

@@ -3,7 +3,7 @@ import FeaturesList from '../Featureslist';
 
 const PlanCard = ({ plan }) => {
   return (
-    <div className="plan">
+    <div className="plan ">
       <h4 style={{color:"#264067"}}>{plan.title}</h4>
       <h3 className="price" style={{color:"#264067"}}>{plan.price}</h3>
       <div className="description">{plan.description}</div>

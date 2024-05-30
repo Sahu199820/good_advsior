@@ -13,19 +13,25 @@ const PricingTable = () => {
 
   return (
     <div className='row'>
-      <div className="tabs col-lg-4 col-12">
-        {pricingData.tabs.map((tab, index) => (
+      <div className="tabs col-lg-12 col-12">
+        <div className="row">
+          <div className='tab-container'>
+          {pricingData.tabs.map((tab, index) => (
           <button
             key={index}
-            className={`tab ${index === activeTab ? 'active' : ''}`}
+            className={`tab ${index === activeTab ? 'active' : ''} col-lg-4 `}
             onClick={() => handleTabClick(index)}
           >
             {tab.title}
           </button>
         ))}
+          </div>
+       
+        </div>
+        
       </div>
       <div className="pricing-table ">
-        {pricingData.tabs[activeTab].plans.map((plan, index) => (
+          {pricingData.tabs[activeTab].plans.map((plan, index) => (
           <PlanCard key={index} plan={plan} />
         ))}
       </div>

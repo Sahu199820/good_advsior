@@ -33,7 +33,7 @@ const Whychooseus = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-6 pt-5">
+                            <div className="col-lg-6">
                                 <div className="reasons-box">
                                     <Card_box image="../../images/icon/professional-services.png" 
                                     title="Professional Services at 
