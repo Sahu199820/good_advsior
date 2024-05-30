@@ -25,12 +25,12 @@ const TestimonialCards = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide >
           <div className="testimonial-box">
             <div className="star">
               <img src="../../images/icon/rating.png" />
             </div>
-            <p>“Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”</p>
+            <p>“Ut ullamcorper hendrerit tempos Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”</p>
             <div className="reverw-name">
               <div className="row">
                 <div className="col-lg-6">
