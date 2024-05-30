@@ -30,7 +30,7 @@ const PricingTable = () => {
         </div>
         
       </div>
-      <div className="pricing-table ">
+      <div className="pricing-table text-center ">
           {pricingData.tabs[activeTab].plans.map((plan, index) => (
           <PlanCard key={index} plan={plan} />
         ))}
