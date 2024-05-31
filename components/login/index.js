@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 
 const LoginPanel = (props) => {
+
     const [close, setClose] = useState(false);
 
     const handleClose = () => {
@@ -11,7 +12,7 @@ const LoginPanel = (props) => {
     };
 
     return (
-            <section className='login-container' style={{display:`${props.show_login}`}}>
+            <section className='login-container' >
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-lg-8'>

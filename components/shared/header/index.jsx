@@ -7,13 +7,17 @@ import React, { useState } from 'react';
 const HeaderFile = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
   const [islogin ,setloginopen] = useState(false);
+  const [display ,setdisplay] = useState("block");
 
   const toggleMenu = () => {
     setMenuOpen(prevState => !prevState);
   };
 
   const handleLoginClick = () => {
-    setloginopen(true); // Open the login component when clicked
+    let ans = document.getElementsByClassName('login-container')[0];
+        console.log(ans);
+        ans.style.display="block";
+        setloginopen(true); 
   };
 
 
