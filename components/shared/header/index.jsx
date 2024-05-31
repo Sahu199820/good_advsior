@@ -14,10 +14,10 @@ const HeaderFile = () => {
   };
 
   const handleLoginClick = () => {
-    let ans = document.getElementsByClassName('login-container')[0];
+        setloginopen(true); 
+        let ans = document.getElementsByClassName('login-container')[0];
         console.log(ans);
         ans.style.display="block";
-        setloginopen(true); 
   };
 
 
