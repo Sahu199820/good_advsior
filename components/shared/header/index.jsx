@@ -1,12 +1,21 @@
 "use client";
+import Login from '@/app/login/page';
+import Login_panel from '@/components/login';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const HeaderFile = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
+  const [islogin ,setloginopen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(prevState => !prevState);
   };
+
+  const handleLoginClick = () => {
+    setloginopen(true); // Open the login component when clicked
+  };
+
 
   return (
     <header className='good-advsior-header-section'>
@@ -46,18 +55,20 @@ const HeaderFile = () => {
                     <li className="nav-item">
                       <a className="nav-link">Others</a>
                     </li>
-                    <li className="nav-item login-btn pl-2 pr-2">
-                      <a className="nav-link text-white">Login</a>
+                    <li className="nav-item login-btn pl-2 pr-2" onClick={handleLoginClick}>
+                        Login
                     </li>
                   </ul>
                 </div>
                 }
-                
               </div>
             </nav>
           </div>
         </div>
       </div>
+      {
+        islogin && <Login_panel show_login="block" />
+      }
     </header>
   );
 };
