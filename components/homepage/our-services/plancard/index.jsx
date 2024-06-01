@@ -9,7 +9,7 @@ const PlanCard = ({ plan }) => {
       <h1 className="price font-bold" style={{color:"#264067"}} >{plan.price}</h1>
       <div className="description">{plan.description}</div>
       <FeaturesList features={plan.features} />
-      <Link href="/Company_registration_step">{plan.link_text}</Link>
+      <Link href="/company-registration">{plan.link_text}</Link>
     </div>
   );
 };
