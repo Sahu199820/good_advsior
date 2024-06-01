@@ -1,13 +1,12 @@
 "use client";
 import Login from '@/app/login/page';
 import Login_panel from '@/components/login';
-import Link from 'next/link';
 import React, { useState } from 'react';
+import Megamenu from './megamenu';
 
 const HeaderFile = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
   const [islogin ,setloginopen] = useState(false);
-  const [display ,setdisplay] = useState("block");
 
   const toggleMenu = () => {
     setMenuOpen(prevState => !prevState);
@@ -42,10 +41,12 @@ const HeaderFile = () => {
                   !isMenuOpen ?'':<div className="collapse navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav ">
                     <li className="nav-item ">
-                      <a className="nav-link active" aria-current="page" href="#">Consult Expert</a>
+                    <a className="nav-link" href="#">
+                        Consult an expert
+                        </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Business Setup</a>
+                    <Megamenu />
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="#">Tax & Compliance</a>
@@ -71,7 +72,7 @@ const HeaderFile = () => {
         </div>
       </div>
       {
-        islogin && <Login_panel show_login="block" />
+        islogin && <Login_panel />
       }
     </header>
   );

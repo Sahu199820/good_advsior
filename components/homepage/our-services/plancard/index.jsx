@@ -1,5 +1,6 @@
 import React from 'react';
 import FeaturesList from '../Featureslist';
+import Link from 'next/link';
 
 const PlanCard = ({ plan }) => {
   return (
@@ -8,7 +9,7 @@ const PlanCard = ({ plan }) => {
       <h1 className="price font-bold" style={{color:"#264067"}} >{plan.price}</h1>
       <div className="description">{plan.description}</div>
       <FeaturesList features={plan.features} />
-      <a href="#" className="link">{plan.link_text}</a>
+      <Link href="/Company_registration_step">{plan.link_text}</Link>
     </div>
   );
 };
