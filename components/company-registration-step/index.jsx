@@ -48,7 +48,7 @@ const Company_registration_step = () => {
       <div className="good-advisor-registration-container">
         <div className='container-fluid'>
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-12">
               <img src='../../images/logo.png' /><br/>
               <h5 style={{display:"none"}} className='heading_data'><Link href="/">Home</Link></h5>
               <div className="registration-step-box m-2 rounded">
@@ -68,7 +68,7 @@ const Company_registration_step = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 certificate" >
+            <div className="col-lg-8 col-12 certificate" >
               <Certificate />
             </div>
           </div>

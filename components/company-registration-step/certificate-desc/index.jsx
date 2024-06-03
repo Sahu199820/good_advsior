@@ -10,7 +10,7 @@ const Certificate = () => {
               <ul className='list-certificate-feature'>
                 <li>
                     <img src='../../images/arrow-icon.png' />
-                    <div>
+                    <div className='certificate-container'>
                     <h4>Timely submission of application</h4>
                      <p>100% compliance assurance so that you can focus only on your business</p>
                     </div>
@@ -18,7 +18,7 @@ const Certificate = () => {
                 </li>
                 <li>
                     <img src='../../images/arrow-icon.png' />
-                    <div>
+                    <div className='certificate-container'>
                     <h4>Timely submission of application</h4>
                      <p>100% compliance assurance so that you can focus only on your business</p>
                     </div>
@@ -26,7 +26,7 @@ const Certificate = () => {
                 </li>
                 <li>
                     <img src='../../images/arrow-icon.png' />
-                    <div>
+                    <div className='certificate-container'>
                     <h4>Timely submission of application</h4>
                      <p>100% compliance assurance so that you can focus only on your business</p>
                     </div>
