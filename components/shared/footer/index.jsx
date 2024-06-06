@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
 
 const Footerfile = () => {
   return (
@@ -10,7 +11,9 @@ const Footerfile = () => {
           <div className="col-lg-3 col-md-4 col-sm-6 col-12 ">
             <div className="footer-list-box">
               <div className="logo">
+                <Link href="/">
                 <img src="../../images/logo.png" />
+                </Link>
                 <h5>good adviosr</h5>
               </div>
               <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

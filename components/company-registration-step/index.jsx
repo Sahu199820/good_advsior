@@ -64,7 +64,9 @@ const Company_registration_step = () => {
         <div className='container-fluid'>
           <div className="row">
             <div className="col-lg-4 col-12">
+              <Link href="/">
               <img src='../../images/logo.png' /><br />
+              </Link>
               <h5 style={{ display: "none" }} className='heading_data'><Link href="/">Home</Link></h5>
               <div className="registration-step-box m-2 rounded">
                 <div className="container">

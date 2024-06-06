@@ -3,6 +3,7 @@ import Login_panel from '@/components/login';
 import React, { useState } from 'react';
 import Megamenu from './megamenu';
 import { Buttoncomponent } from '@/components/button';
+import Link from 'next/link';
 
 const HeaderFile = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
@@ -27,12 +28,14 @@ const HeaderFile = () => {
           <div className="col-lg-12">
             <nav className="navbar navbar-expand-lg ">
               <div className="container">
+                <Link href="/">
                 <img
                   src="../../images/logo.png"
                   width={250}
                   height={50}
                   alt="good advisor logo"
                 />
+                </Link>
                 <button className="navbar-toggler" type="button" onClick={toggleMenu} aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>

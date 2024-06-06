@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Megamenu = () => {
@@ -5,7 +6,7 @@ const Megamenu = () => {
     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Business Setup</a>
     <ul class="dropdown-menu dp-header-menu">
-      <li><a class="dropdown-item" href="#">Business Registration</a></li>
+      <li><Link class="dropdown-item" href="/business-registration" >Business Registration</Link></li>
       <li class="nav-item dropend">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
          International Business Setup
