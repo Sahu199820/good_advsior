@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '..';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-brands-svg-icons';
 
 const Formstep = (props) => {
 
     const finalwidth = useContext(ThemeContext);
-
+    console.log(finalwidth);
 
     return (
         <div className='step-container' >
@@ -23,9 +24,11 @@ const Formstep = (props) => {
                     <div className="col-lg-12">
                         <h2 className='border-2' >
                         </h2>
-                        <h4 className='' style={{width:`${finalwidth}%`}}>
-
+                        
+                        <h4 className='' style={{width:`${finalwidth.width}%`}}>
+                        
                         </h4>
+                        <FontAwesomeIcon icon={faCircle} className='' />
                     </div>
                 </div>
             </div>

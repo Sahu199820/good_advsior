@@ -1,8 +1,8 @@
 "use client";
-import Login from '@/app/login/page';
 import Login_panel from '@/components/login';
 import React, { useState } from 'react';
 import Megamenu from './megamenu';
+import { Buttoncomponent } from '@/components/button';
 
 const HeaderFile = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
@@ -18,7 +18,6 @@ const HeaderFile = () => {
         console.log(ans);
         ans.style.display="block";
   };
-
 
   return (
     <header className='good-advsior-header-section'>
@@ -60,9 +59,10 @@ const HeaderFile = () => {
                     <li className="nav-item">
                       <a className="nav-link">Others</a>
                     </li>
-                    <li className="nav-item login-btn pl-2 pr-2" onClick={handleLoginClick}>
-                        Login
+                    <li className="nav-item" onClick={handleLoginClick}>
+                    <Buttoncomponent title_data="Login" />
                     </li>
+                  
                   </ul>
                 </div>
                 }

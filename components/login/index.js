@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 
 const LoginPanel = (props) => {
-
-    const [close, setClose] = useState(false);
 
     const handleClose = () => {
         let ans = document.getElementsByClassName('login-container')[0];
